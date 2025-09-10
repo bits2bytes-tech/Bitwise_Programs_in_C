@@ -13,10 +13,11 @@
 	#TARGET = duplicates_of_array
 	#TARGET = SNOB
 	#TARGET = parity_lookuptable
-	TARGET = m_into_n
-	
+	#TARGET = m_into_n
+         TARGET = swap_bits_in_a_number
+  	
   all: $(TARGET).c
-	$(CC) $(CFLAGS) -o exe $(TARGET).c
+	      $(CC) $(CFLAGS) -o exe $(TARGET).c
 
-  clean: 
-	$(RM) exe
+  clean:
+	    $(RM) exe
