@@ -16,8 +16,9 @@
 	#TARGET = m_into_n
   #TARGET = swap_bits_in_a_number
   #TARGET = find_Endianness
-  # TARGET = compute_integer_obsolute_value
-   TARGET = find_non_repeating_elements
+  #TARGET = compute_integer_obsolute_value
+  #TARGET = find_non_repeating_elements
+   TARGET = Reverse_bits
 
   all: $(TARGET).c
 	      $(CC) $(CFLAGS) -o exe $(TARGET).c
