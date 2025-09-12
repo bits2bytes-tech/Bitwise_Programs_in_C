@@ -45,7 +45,7 @@ int main(void)
 {
     int non_repeating_no_1 = 0 , non_repeating_no_2 = 0;
 
-    int array[] = { 33, 24 ,33 , 50 , 21 , 8 , 2 , 9 , 24 , 8 ,2 ,21 , 33};
+    int array[] = { 33, 24 ,33 , 50 , 21 , 8 , 2 , 9 , 24 , 8 ,2 ,21};
 
     unsigned int size = sizeof(array)/sizeof(array[0]);
 
