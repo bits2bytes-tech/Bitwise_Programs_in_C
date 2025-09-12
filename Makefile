@@ -18,7 +18,10 @@
   #TARGET = find_Endianness
   #TARGET = compute_integer_obsolute_value
   #TARGET = find_non_repeating_elements
-   TARGET = Reverse_bits
+  #  TARGET = Reverse_bits
+  #  TARGET = find_bit_parity
+  # TARGET = swap_even_odd_bits
+  TARGET = is_bit_pattern_palindrome
 
   all: $(TARGET).c
 	      $(CC) $(CFLAGS) -o exe $(TARGET).c
