@@ -26,7 +26,8 @@
   #TARGET = XOR_without_using_operator
   # TARGET = toggle_bits
   # TARGET = addition_logic
-  TARGET = extract_bits
+  # TARGET = extract_bits
+  TARGET = find_even_occuring_elements
 
   all: $(TARGET).c
 	      $(CC) $(CFLAGS) -o exe $(TARGET).c
