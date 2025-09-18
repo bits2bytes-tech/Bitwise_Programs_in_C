@@ -27,7 +27,11 @@
   # TARGET = toggle_bits
   # TARGET = addition_logic
   # TARGET = extract_bits
-  TARGET = find_even_occuring_elements
+  # TARGET = find_even_occuring_elements
+  # TARGET = rotate_bits
+  # TARGET = change_endianness
+#  TARGET = convert_AtoB
+  TARGET = find_duplicates
 
   all: $(TARGET).c
 	      $(CC) $(CFLAGS) -o exe $(TARGET).c
