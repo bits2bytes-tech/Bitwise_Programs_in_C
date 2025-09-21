@@ -32,8 +32,11 @@
   #TARGET = change_endianness
   #TARGET = convert_AtoB
   #TARGET = find_duplicates
+  # TARGET = is_power_of_2
 
-  TARGET =  compute_min_max
+  # TARGET =  compute_min_max
+
+    TARGET = count_set_bits_benchmarking
 
   all: $(TARGET).c
 	      $(CC) $(CFLAGS) -o exe $(TARGET).c
