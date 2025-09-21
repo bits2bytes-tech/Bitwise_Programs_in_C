@@ -24,14 +24,16 @@
   #TARGET = is_bit_pattern_palindrome
   #TARGET = isSparse
   #TARGET = XOR_without_using_operator
-  # TARGET = toggle_bits
-  # TARGET = addition_logic
-  # TARGET = extract_bits
-  # TARGET = find_even_occuring_elements
-  # TARGET = rotate_bits
-  # TARGET = change_endianness
-#  TARGET = convert_AtoB
-  TARGET = find_duplicates
+  #TARGET = toggle_bits
+  #TARGET = addition_logic
+  #TARGET = extract_bits
+  #TARGET = find_even_occuring_elements
+  #TARGET = rotate_bits
+  #TARGET = change_endianness
+  #TARGET = convert_AtoB
+  #TARGET = find_duplicates
+
+  TARGET =  compute_min_max
 
   all: $(TARGET).c
 	      $(CC) $(CFLAGS) -o exe $(TARGET).c
