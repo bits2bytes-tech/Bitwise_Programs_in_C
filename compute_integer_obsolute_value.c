@@ -13,6 +13,10 @@ Also remember,
 we need to do these operations only if the number is negative 
 (sign bit is set).
 
+* Set the mask as right shift of the integer by 31 (assuming integers are stored using 32 bits) mask = n >> 31
+* For negative numbers, above step sets mask as 1 1 1 1 1 1 1 1 and 0 0 0 0 0 0 0 0 for positive numbers. 
+  Add the mask to the given number i.e. mask + n   
+*XOR of mask + n and mask gives the absolute value
 
 mask = n>>31
 (mask + n) ^ mask
