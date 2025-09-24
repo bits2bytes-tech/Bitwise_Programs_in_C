@@ -24,7 +24,7 @@ Output : 50
    // n/32 + 1 integers (Assuming int is stored 
    // using 32 bits) 
    //32000/32 = 1000 +1 = 1001
-   unsigned int arr[1001]; 
+   unsigned int g_arr[1001]; 
 
 
 // Get value of a bit at given position 
@@ -39,7 +39,7 @@ Output : 50
   
         // Find value of given bit number in 
         // arr[index] 
-        return (arr[index] & (1 << bitNo)) != 0; 
+        return (g_arr[index] & (1 << bitNo)) != 0; 
     } 
   
     // Sets a bit at given position 
@@ -50,17 +50,17 @@ Output : 50
   
         // Set bit number in arr[index] 
         int bitNo = (pos & 0x1F); 
-        arr[index] |= (1 << bitNo); 
+        g_arr[index] |= (1 << bitNo); 
     } 
 
     // Main function to print all Duplicates 
-    void checkDuplicates(int arr[], int n) 
+    void checkDuplicates(int f_arr[], int n) 
     { 
         // Traverse array elements 
         for (int i = 0; i < n; i++) 
         { 
             // Index in bit array 
-            int num = arr[i]; 
+            int num = f_arr[i]; 
   
             // If num is already present in bit array 
             if (get(num)) 
@@ -75,10 +75,10 @@ Output : 50
 // Driver code 
 int main() 
 { 
-    int arr[] = {1, 5, 1, 10, 12, 10}; 
-    int n = sizeof(arr) / sizeof(arr[0]); 
+    int u_arr[] = {1, 5, 1, 10, 12, 10}; 
+    int n = sizeof(u_arr) / sizeof(u_arr[0]); 
  
-    checkDuplicates(arr, n); 
+    checkDuplicates(u_arr, n); 
     return 0; 
 } 
 
@@ -90,3 +90,4 @@ flagging each element v by setting bit v to 1.
 When we come across a duplicate element, we print it.
 
 */
+
