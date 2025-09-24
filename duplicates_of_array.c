@@ -1,6 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdbool.h>
 /*********Problem Statement****************************
 Find Duplicates of array using bit array
 You have an array of N numbers, where N is at most 32,000. 
@@ -18,7 +15,9 @@ array.
 Input : arr[] = {50, 40, 50}
 Output : 50
 *******************************************************/
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
 
    // Devide by 32. To store n bits, we need 
    // n/32 + 1 integers (Assuming int is stored 
@@ -90,4 +89,5 @@ flagging each element v by setting bit v to 1.
 When we come across a duplicate element, we print it.
 
 */
+
 
