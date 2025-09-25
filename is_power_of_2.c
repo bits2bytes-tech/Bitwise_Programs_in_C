@@ -32,4 +32,11 @@ int main(void)
 }
 
 
-/* Add description here*/
+/* 
+say v = 4 = binary equivalent 0000 0100
+
+    0100
+&   0011
+----------
+    0000 expected out of expression (v & (v - 1)) when given number is power of 2.
+*/
